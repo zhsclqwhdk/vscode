@@ -1,6 +1,5 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import Form1 from "./Form1";
 import "./App.css";
 
 function App() {
@@ -20,6 +19,7 @@ function App() {
       {/*클릭하면 count 값을 하나 올리는 Up 함수호출*/}
       <button onClick={up}>Up</button>
       <button onClick={down}>Down</button>
+      <Form1 />
     </>
   );
 }
