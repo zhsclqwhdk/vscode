@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Form1 from "./Form1";
 import Form2 from "./Form2";
+import ConditionalRendering from "./ConditionalRendering";
 import "./App.css";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <button onClick={down}>Down</button>
       <Form1 />
       <Form2 />
+      <ConditionalRendering />
     </>
   );
 }
