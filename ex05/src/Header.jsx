@@ -1,3 +1,10 @@
+import { BrowserRouter, Link } from "react-router-dom";
 const Header = () => {
-  return <></>;
+  return (
+    <>
+      <Link to="/">Home</Link>
+      <Link to="/info">Info</Link>
+    </>
+  );
 };
+export default Header;

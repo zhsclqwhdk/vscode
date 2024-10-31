@@ -7,6 +7,7 @@ function App() {
     <>
       <h2>App.jsx</h2>
       <BrowserRouter>
+        <Header />
         <Link to="/">Home</Link>
         <Link to="/info">Info</Link>
         <Routes>
