@@ -1,3 +1,4 @@
+import { useParams } from "react-router-dom";
 const Param1 = () => {
   const { id } = useParams();
   console.log(id);

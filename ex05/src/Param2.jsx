@@ -1,3 +1,4 @@
+import { useSearchParams } from "react-router-dom";
 const Param2 = () => {
   const [params] = useSearchParams();
   const q = params.get("q");
