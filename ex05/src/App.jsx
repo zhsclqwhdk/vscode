@@ -3,6 +3,7 @@ import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import Info from "./Info";
 import Header from "./Header";
+import Param1 from "./Param1";
 function App() {
   return (
     <>
@@ -12,6 +13,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/info" element={<Info />} />
+          {/* /param/1 /param/6 */}
+          <Route path="/param/:id" element={<Param1 />} />
         </Routes>
       </BrowserRouter>
     </>
