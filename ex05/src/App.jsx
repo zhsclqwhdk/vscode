@@ -4,6 +4,7 @@ import Home from "./Home";
 import Info from "./Info";
 import Header from "./Header";
 import Param1 from "./Param1";
+import Param2 from "./Param2";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
           <Route path="/info" element={<Info />} />
           {/* /param/1 /param/6 */}
           <Route path="/param/:id" element={<Param1 />} />
+          <Route path="/param" element={<Param2 />} />
         </Routes>
       </BrowserRouter>
     </>
