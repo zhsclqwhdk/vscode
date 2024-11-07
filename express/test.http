@@ -20,3 +20,30 @@ Content-Type: application/json; Charset=UTF-8
     "name": "이름",
     "age": "20"
 }
+
+###
+get http://localhost:8000/nations/list
+
+###
+get http://localhost:8000/nations/1
+
+###
+post http://localhost:8000/nations/save
+Content-Type: application/json; Charset=UTF-8
+
+{
+    "name": "키보토스",
+    "capital": "트리니티",
+    "population": 670000
+}
+
+###
+put http://localhost:8000/nations/1
+Content-Type: application/json; Charset=UTF-8
+
+{
+    "id": 1,
+    "name": "대한민국",
+    "capital": "서울",
+    "population": 52000000
+}
