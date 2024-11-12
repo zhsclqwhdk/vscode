@@ -1,11 +1,12 @@
 import express from "express";
-
 import mysql2 from "mysql2";
+
 {
   /* 포트를 8000으로 설정하기 */
 }
 const app = express();
 // json 데이터를 주고받기위한 설정
+
 app.use(express.json());
 
 app.listen(8000, () => {
