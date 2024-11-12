@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 const Save = () => {
+  const navigate = useNavigate();
+
   const [member, setMember] = useState({
     member_email: "",
     member_password: "",
@@ -23,7 +25,8 @@ const Save = () => {
     let res = await axios.post("http://localhost:8000/member/save", {
       member: member,
     });
-    console.log(res);
+    console.log("res", res);
+    navigate("/"); // 해당주소로 이동
   };
 
   return (
