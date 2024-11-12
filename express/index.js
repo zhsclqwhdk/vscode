@@ -1,5 +1,5 @@
 import express from "express";
-import mysql from "mysql";
+
 import mysql2 from "mysql2";
 {
   /* 포트를 8000으로 설정하기 */
